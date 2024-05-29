@@ -1,12 +1,17 @@
 # Laboratoire - CustomTkinter
 ## Introduction
 Le but de ce laboratoire est de créer une interface graphique qui va permettre d'afficher 
-une image prise par la webcam de l'ordinateur.
+une image recadrée prise par la webcam de l'ordinateur.
 
 ## Buts
-- Utiliser la librairie CustomTkinter pour créer une interface graphique.
-- Utiliser la librairie opencv-python pour capturer une image depuis la webcam.
+- Utiliser la librairie `CustomTkinter` pour créer une interface graphique.
+- Utiliser la librairie `opencv-python` pour capturer une image depuis la webcam.
 - Comprendre la séparation des composants graphiques et de la logique de l'application.
+
+## Librairies
+- `pip install customtkinter`
+- `pip install opencv-python`
+- `pip install pillow`
 
 ## Composition de l'interface
 ### Fenêtre principale
@@ -30,17 +35,11 @@ une image prise par la webcam de l'ordinateur.
 ### Prise d'image
 Pour capturer une image depuis la webcam, nous allons utiliser la librairie `opencv-python`.
 
-Installer la librairie avec la commande suivante:
-
-```bash
-pip install opencv-python
-```
-
 Pour capturer une image, nous allons utiliser la fonction `cv2.VideoCapture(0)`.
 La valeur `0` correspond à l'indice de la webcam. Si vous avez plusieurs webcam, 
 vous pouvez changer la valeur pour utiliser une autre webcam.
 
-Pour afficher une image dans CustomTkinter, il faut utiliser le widget `Label.
+Pour afficher une image dans CustomTkinter, il faut utiliser le widget `Label`.
 
 Pour capturer et afficher une image, vous pouvez vous inspirer du code suivant:
 
