@@ -16,7 +16,7 @@ Le but de ce laboratoire est de créer une interface graphique qui permettra d'a
 ### Fenêtre principale
 - Un titre.
 - Une zone pour afficher les différentes pages (layout).
-- Deux boutons pour changer de layout (configuration des zones / prise d'image).
+- Deux boutons pour changer de layout (configuration de la zone / prise d'image).
 
 ### Layout Configuration des zones
 - Un bouton pour prendre une image.
