@@ -22,8 +22,7 @@ Le but de ce laboratoire est de créer une interface graphique qui permettra d'a
 - Un bouton pour prendre une image.
 - L'affichage de l'image prise.
 - Un carré sur l'image pour définir la zone de capture.
-- Quatre zones de texte pour définir la position et la taille de la zone de capture.
-- Un compteur affichant le nombre d'images prises pour la configuration.
+- (Bonus) Quatre zones de texte pour définir la position et la taille de la zone de capture.
 
 ### Layout Prise d'image
 - Un bouton pour prendre une image (l'image est rognée à la zone de capture).
@@ -57,6 +56,8 @@ if not ret:
 
 # Conversion de l'image pour l'affichage
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+# Dessin d'un rectangle
+cv2.rectangle(image_rgb, (10, 10), (100, 200), (0, 255, 0), 3)
 photo = ctk.CTkImage(Image.fromarray(image_rgb), size=(width, height))
 
 # Affichage de l'image
