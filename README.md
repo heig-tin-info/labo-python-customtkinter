@@ -56,7 +56,9 @@ if not ret:
 # Affichage de l'image
 label = ctk.CTkLabel(root)
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+cv2.rectangle(image_rgb, (10, 10), (100, 200), (0, 255, 0), 3)
 photo = ctk.CTkImage(Image.fromarray(image_rgb), size=(width, height))
+
 label.configure(image=photo, text="")
 
 # Libération de la webcam
